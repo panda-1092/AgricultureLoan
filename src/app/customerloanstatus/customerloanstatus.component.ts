@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-customerloanstatus',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customerloanstatus.component.css']
 })
 export class CustomerloanstatusComponent implements OnInit {
-
-  constructor() { }
+  customers=this.sharedService.getClickEvent();
+  constructor(private sharedService:SharedService) { }
 
   ngOnInit(): void {
   }

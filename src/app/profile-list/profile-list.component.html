@@ -1,19 +1,28 @@
 <!-- <p>profile-list works!</p> -->
+<div class="body">
 <h2 class="text-center">Customer Details</h2>
 <table class ="table table-striped">
-    <thead>
-        <link rel="stylesheet" type="text/css" href="profile-list.component.css">
-        <tr>
-            <th>name</th>
-            <th>PhoneNo</th>
-            <th>emailid</th>
-            <th>Address</th>
-            <th>loanid</th>
-            <th>monthlyemi</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-        <tbody>
+        <div class="card">
+            <div class="card-body">
+             <table class="table table-striped">
+                 <thead>
+                     <tr>
+                     <th>Name : {{customers.name}}</th>
+                     <th>Address : {{customers.address}}</th>
+                     <th>Email_Id : {{customers.emailid}}</th>
+                     </tr>
+                     <tr>
+                     <th>Mobile_no : {{customers.mobile_no}}</th>
+                     <th>Adhaar_no : {{customers.adhaar_no}}</th>
+                     <th>Pan_no : {{customers.pan_no}}</th>
+                     </tr>
+                     <tr>
+                     <th>salary :{{customers.salary}}</th>
+                     <th>emi_per : </th>
+                     <th>loan_repayment_months :{{customers.loan_repayment_months}}</th>
+                 </tr>
+                 </thead>
+        <!-- <tbody>
             <tr *ngFor = "let profile of profiles">
             <td>{{profile.name}}</td>
             <td>{{profile.mobile_no}}</td>
@@ -27,6 +36,7 @@
             </td>
 
             </tr>
-        </tbody>
+        </tbody> -->
     
 </table>
+</div>

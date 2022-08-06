@@ -1,74 +1,78 @@
-<!-- <p>customerapplyloan works!</p> -->
-<div class="col-md-6 offset-md-3">
-<form (ngSubmit)="onSubmit()">
-  
-    <div class="form-group">
+<div class="body">
+<div class="container">
+   <div class="heading">Apply Loan Form</div>
+ <form (ngSubmit)="onSubmit()">
+   <div class="card-details">        
+    <div class="card-box">
         <label>Name</label>
         <input type="text" class="form-control" id="enterName"
-        [(ngModel)]="customer.name" name="name">
+        [(ngModel)]="customer.name" name="name" placeholder="Enter your Name" required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Address</label>
         <input type="text" class="form-control" id="enterAddress"
-        [(ngModel)]="customer.address" name="enterAddress">
+        [(ngModel)]="customer.address" name="enterAddress" placeholder="Enter your Address" required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Mobile No</label>
         <input type="text" class="form-control" id="enterMobile"
-        [(ngModel)]="customer.mobile_no" name="enterMobile">
+        [(ngModel)]="customer.mobile_no" name="enterMobile" placeholder="Enter your Moblile No." required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Email Id</label>
         <input type="text" class="form-control" id="enterEmail"
-        [(ngModel)]="customer.emailid" name="enterEmail">
+        [(ngModel)]="customer.emailid" name="enterEmail" placeholder="Enter your Email address" required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Adhaar No</label>
         <input type="text" class="form-control" id="enterAdhaarNo"
-        [(ngModel)]="customer.adhaar_no" name="enterAdhaarNo">
+        [(ngModel)]="customer.adhaar_no" name="enterAdhaarNo" placeholder="Enter your adhaar number" required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Pan No</label>
         <input type="text" class="form-control" id="enterPanNo"
-        [(ngModel)]="customer.pan_no" name="enterPanNo">
+        [(ngModel)]="customer.pan_no" name="enterPanNo" placeholder="Enter your pan number" required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Salary</label>
         <input type="text" class="form-control" id="enterSalary"
-        [(ngModel)]="customer.salary" name="enterSalary">
+        [(ngModel)]="customer.salary" name="enterSalary" placeholder="Enter your salary" required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Loan Amount Required</label>
         <input type="text" class="form-control" id="enterAmount"
-        [(ngModel)]="customer.loan_amount_required" name="enterAmount">
+        [(ngModel)]="customer.loan_amount_required" name="enterAmount" placeholder="Enter the loan amount" required>
     </div>
 
-    <div class="form-group">
+    <div class="card-box">
         <label>Repayment Months</label>
         <input type="text" class="form-control" id="enterMonths"
-        [(ngModel)]="customer.loan_repayment_months" name="enterMonths">
+        [(ngModel)]="customer.loan_repayment_months" name="enterMonths" placeholder="Enter repayment months" required>
     </div>
 
     <!-- <button class="btn btn-success" type="submit">Submit</button> -->
-    <div class="container text-center my-4">
+</div>
+  <div class="button offset-md-4">
         <div class="btn-group" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-secondary">
-              1
-            </button>
-            
-            <button  class="btn btn-secondary" type="submit">2 </button> 
+          <button type="button" class="btn btn-secondary" (click)="onSubmit()">
+            1
+          </button>
+  
+          <button class="btn btn-secondary" type="submit">2</button>
+        
+      </div>
              
               
-        </div>
-    </div>
-</form>
-
-</div> 
-
+        
+       </div>
+   
+ </form>
+</div>
+</div>

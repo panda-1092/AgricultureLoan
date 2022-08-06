@@ -1,0 +1,13 @@
+/* body{
+    color:#fff;
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg ,#05073a,#dc0606ca);
+    padding: 10px;
+} */
+
+.container-fluid{
+    background: linear-gradient(135deg ,#05073a,#dc0606ca);
+}

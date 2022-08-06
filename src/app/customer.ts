@@ -9,5 +9,5 @@ export class Customer {
     salary:number | undefined;
     loan_amount_required:number | undefined;
     loan_repayment_months:number | undefined;
-   
+   document :any;
 }

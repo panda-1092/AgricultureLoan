@@ -1,0 +1,21 @@
+
+.body{
+    color:#fff;
+   height:100vh;
+   background: linear-gradient(135deg ,#05073a,#dc0606ca);
+   padding: 10px;
+}
+.input-group{
+    padding-top:20vh;
+    padding-left: 40vh;
+    padding-right: 40vh;
+}
+.body .card{
+    margin:50px;
+    padding:10px;
+    background: linear-gradient(135deg ,#05073a,#dc0606ca);
+}
+.card th{
+    color: #fff;
+}
+

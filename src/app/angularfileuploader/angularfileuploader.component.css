@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body{
+   color:#fff;
+   display:flex;
+   height:100vh;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(135deg ,#05073a,#dc0606ca);
+   padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width:100%;
+   max-height: calc(100% /2 -20%);;
+    padding: 70px 80px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#dc6060ca,#05073a);
+}
+.container form .card-details{
+    margin-top: 25px;
+   
+    
+}
+ form .card-details .card-box{
+       width:calc(100% /2 -20%);
+       margin-bottom: 15px;
+ }
+ form .button1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+ }
+ 
+ form .button1 #uploadDocumentsButton{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: #ccc;
+    background: linear-gradient(135deg,#dc6060ca,#05073a);
+ }
+
+ form .button1 #applyLoanButton{
+   padding-left:5px;
+   padding-bottom: 5px;
+   background: linear-gradient(135deg,#dc6060ca,#05073a);
+   color:#ccc;
+ }
+
+ form .button{
+    text-align: center;
+    width:100%;
+    height: 50px;
+
+ }
+ form .button button{
+    padding :12px;
+    margin-top: 30px;
+    height : 100%;
+    width: 100%;
+    outline:none;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(375deg,#dc0606ca,#05073a);
+ }

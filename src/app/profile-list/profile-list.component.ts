@@ -4,6 +4,7 @@ import { CustomerService } from '../customer.service';
 
 import {Profile} from '../profile'
 import { ProfileService } from '../profile.service';
+import { SharedService } from '../shared.service';
 @Component({
   selector: 'app-profile-list',
   templateUrl: './profile-list.component.html',
@@ -11,26 +12,13 @@ import { ProfileService } from '../profile.service';
 })
 export class ProfileListComponent implements OnInit {
   profiles:any;
+  customers=this.sharedService.getClickEvent();
   constructor(private profileService:CustomerService,
-    private router:Router) { }
+    private router:Router,private sharedService:SharedService) { }
 
   ngOnInit(): void {
-    this.getProfiles();
+    
   }
-  private getProfiles(){
-    this.profileService.getProfileList().subscribe(data =>{
-      this.profiles=data;
-
-    });
-    console.log(this.profiles);
-  }
-  updateprofile(loanid:number){
-    this.router.navigate(['update-profile',loanid]);
-  }
- deleteprofile(loanid:number){
-   this.profileService.deleteprofile(loanid).subscribe(data =>{
-     console.log(data);
-     this.getProfiles();
-   })
- }
+ 
+ 
 }

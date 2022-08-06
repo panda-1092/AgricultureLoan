@@ -1,9 +1,11 @@
 <!-- <p>angularfileuploader works!</p> -->
 
 <!-- <input type="file" class="file-upload" onchange="console.log(event.target.files)"> -->
-<div class="offset-md-2">
+<div class="body">
+<div class="container">
   <form>
-    <div class="form-group">
+    <div class="card-details">
+       <div class="card-box">
       <label>Upload Documents(Mandatory *)</label>
       <br />
       <select id="selectDocumentType" name="documents">
@@ -15,7 +17,7 @@
       </select>
     </div>
     <br />
-    <div class="form-group">
+    <div class="card-box">
       <label>Images or Documents(upload below 2mb)</label>
 
       <br />
@@ -27,24 +29,20 @@
         style="height: 100%"
       />
     </div>
-
-    <button
-      class="btn btn-primary my-4"
-      id="uploadDocumentsButton"
+     <div class="button1">
+    <button id="uploadDocumentsButton"
       (click)="onUpload()"
     >
       Upload Documents
     </button>
 
-    <button
-      class="btn btn-success offset-md-6"
-      id="applyLoanButton"
+    <button id="applyLoanButton"
       (click)="onSubmit()"
     >
       Apply for loan
     </button>
-
-    <div class="container offset-md-4">
+     </div>
+    <div class="button">
       <div class="btn-group" role="group" aria-label="Third group">
         <button type="button" class="btn btn-secondary" (click)="onClick()">
           1
@@ -53,7 +51,9 @@
         <button class="btn btn-secondary" type="submit">2</button>
       </div>
     </div>
+    </div>
   </form>
+</div>
 </div>
 
   <!-- <div class="container row">
